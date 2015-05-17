@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController">
+            <connections>
+                <outlet property="ivProfileImage" destination="Osj-cM-q4b" id="xCh-hv-1kZ"/>
+                <outlet property="txtEmail" destination="z7S-tK-2OL" id="oeK-H4-PFT"/>
+                <outlet property="txtPassword" destination="k9u-4h-zCP" id="VfF-Am-of0"/>
+                <outlet property="txtUsername" destination="h3Z-aj-R3G" id="Gzh-BI-SVf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMainInfo" destination="TE0-f2-Vvj" id="jDq-df-nQP"/>
+                <outlet property="viewProfileImage" destination="Tnq-9x-Xvy" id="LW8-mG-XqL"/>
+                <outlet property="viewTerms" destination="YKh-sc-LsO" id="34e-Ut-twQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="mrR-FU-Jg7">
+                    <rect key="frame" x="0.0" y="20" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qfu-9G-NRN">
+                            <rect key="frame" x="129" y="12" width="63" height="21"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="slt-To-xL0">
+                            <rect key="frame" x="0.0" y="-2" width="60" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="btn_back">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="ovl-6W-p5X"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="Tnq-9x-Xvy">
+                    <rect key="frame" x="0.0" y="67" width="320" height="135"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_avatar" id="Osj-cM-q4b">
+                            <rect key="frame" x="120" y="28" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eR4-NV-RD1">
+                            <rect key="frame" x="120" y="28" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPickImage:" destination="-1" eventType="touchUpInside" id="fGD-XQ-SOV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="TE0-f2-Vvj">
+                    <rect key="frame" x="0.0" y="228" width="320" height="252"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="hPS-LH-T82">
+                            <rect key="frame" x="0.0" y="126" width="320" height="63"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="IQR-HW-Qhd">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose a Password" minimumFontSize="17" id="k9u-4h-zCP">
+                                    <rect key="frame" x="65" y="17" width="190" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Nw1-Vj-Pcu"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_password" id="VCg-MB-wcD">
+                                    <rect key="frame" x="25" y="26" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="N9y-Qr-u5I">
+                            <rect key="frame" x="0.0" y="63" width="320" height="63"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="S9K-Gz-D0q">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_email" id="Fdz-3u-fPk">
+                                    <rect key="frame" x="25" y="27" width="14" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" minimumFontSize="17" id="z7S-tK-2OL">
+                                    <rect key="frame" x="65" y="17" width="190" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Ql3-5E-Qiu"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="I5M-n3-BDR">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="WQC-p2-yX5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_username" id="fAQ-sn-Ehv">
+                                    <rect key="frame" x="25" y="25" width="14" height="13"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User Name" minimumFontSize="17" id="h3Z-aj-R3G">
+                                    <rect key="frame" x="65" y="17" width="190" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="NY0-w7-zuT"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="bWE-Sg-Hcf" userLabel="Button - Signup">
+                            <rect key="frame" x="0.0" y="190" width="320" height="62"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.53333333329999999" green="0.75294117650000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <state key="normal" title="SIGN UP">
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onSignUp:" destination="-1" eventType="touchUpInside" id="fbs-hl-0rj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="YKh-sc-LsO" userLabel="View - Terms">
+                    <rect key="frame" x="0.0" y="480" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="3fv-md-1p8">
+                            <rect key="frame" x="0.0" y="61" width="320" height="349"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <string key="text">Welcome to Wasted Selfie, LLC (“Wasted Selfie,” “we” or “us”), and Wasted Selfie’s iPhone and other applications (those applications together with the Site, the “Service”). The Service as a whole and all worldwide rights, titles and interests in and to the Service are owned by Wasted Selfie.
+
+Please review these terms of use carefully before using the Service
+Your use of and access to the Service are governed by the following terms of use (“Terms”). If you do not agree with all of these Terms, please do not use the Service. By using the Service, you agree to comply with and to be bound by these Terms, including the Privacy Policy and Community Guidelines set forth herein. We reserve the right to change these Terms at any time at our sole discretion. By using the Service after any such change, you agree to comply with and to be bound by these Terms as changed.
+Wasted Selfie’s Privacy Policy applies to use of this Site and its terms are made part of these Terms by reference. You acknowledge and agree that transmissions over the internet can never be completely secure and you understand that any message and/or information that you transmit to us might be intercepted and read by others, even if we take measures to prevent such interception (such as using encryption technology). You expressly agree that Wasted Selfie may preserve any transmittal or communication by you through the Service, or any service offered through the Service, and may disclose that information if legally required to do so or if Wasted Selfie determines that the disclosure is reasonably necessary to enforce these Terms or to protect any rights hereunder or to respond to claims of wrongdoing by others. Please visit our Privacy Policy for our complete policy on what information we collect, how we may use that information and when we share it.
+Wasted Selfie’s Community Guidelines provide important information regarding permissible user content with respect to the Service. While Wasted Selfie cannot guarantee uses will not encounter objectionable content on the Service, the Community Guidelines are an important part of providing a creative environment on the Service that all users can enjoy. Accordingly, you must observe the Community Guidelines as they may be updated from time to time by Wasted Selfie in our sole discretion.
+These terms and conditions may also be changed at Wasted Selfie’s sole discretion and those changes become effective upon posting through the Service. You are responsible for referring to the Service on an ongoing basis so that you understand our current terms and policies.
+Wasted Selfie reserves the right at any time and for any reason, with or without notice, to: (1) modify, suspend, interrupt or terminate operation of or access to the Service, or any portion thereof; and (2) modify or change the Service and the applicable terms and policies.
+What You Cannot Do on the Service
+In addition to other limitations set forth in these Terms, by using the Service, you agree not to: (1) use any data mining, robots, or similar data gathering and extraction methods in connection with the Service; (2) interfere with the operation of the Service or with any other person’s use of the Service; (3) impose an unreasonable burden on the Service or network; (4) breach, or attempt to breach, the security of the Service; (5) gain unauthorized access to the Service or any part thereof; (6) use the Service for any purpose that is beyond the scope of the Service’s expected use, illegal or prohibited by these Terms; (7) to solicit any activity, unlawful or otherwise, that infringes Wasted Selfie’s rights or the rights of any other party; and (8) use the Service to transmit: spam, junk email, bulk email, promotions, or other solicitations, content that includes any advertising or marketing materials; content that may be deemed unlawful, threatening, harassing, racist, abusive, libelous, pornographic, vulgar, defamatory, obscene, indecent, or otherwise inappropriate, including any messages constituting or encouraging criminal conduct; content that violates or infringes on our legal rights or copyrights, or the legal rights or copyrights of others; or viruses, bugs, worms, or any other computer code that may harm a network, computer, server, hardware, software, or telephone equipment.
+Account Security
+If you open an account through the Service (including establishing a username and password), you agree to provide accurate and truthful information about yourself and to keep your account current. You are responsible for any activity that occurs under you account and you are entirely responsible for the security and secrecy of your account login information and for all activity that occurs on your account as a result of your failure to maintain the security or secrecy of your account login information. You agree to notify Wasted Selfie immediately of all unauthorized use of your account and if the security or secrecy of your account login information has been compromised. You may be held responsible for any losses incurred by Wasted Selfie or any other user of the Service that are in any way related to your failure to maintain the security of your account information.
+Intellectual Property
+Unless otherwise stated, all Wasted Selfie materials on the Service, including, but not limited to, text, graphics, images, illustrations, designs, icons, photographs, video clips, and written and other materials that appear as part of the Service, as well as their selection and arrangement and “look and feel” (collectively, the “Wasted Selfie Content”) are protected by copyright, trademark, trade dress, patent, and/or other intellectual property laws, and any unauthorized use of the Wasted Selfie Content may violate such laws and these Terms. Except as expressly provided herein, Wasted Selfie does not grant any express or implied rights to use the Wasted Selfie Content. You agree not to copy, reproduce, republish, frame, download, transmit, modify, display, reverse engineer, create derivative works based on the Wasted Selfie Content or their selection and arrangement on the Service, sell, or participate in any sale of, rent, lease, loan, assign, distribute, license, sublicense, or exploit in any way, in whole or in part, any of the Wasted Selfie Content, the Service or any related software, except as expressly authorized herein.
+This Site may also make available materials, information and services provided by third parties, such as photographs, text, graphics, pictures, sound, video, information and software applications (collectively, the “Third Party Content”). The Third Party Content may be governed by separate license agreements that accompany such content. Although Wasted Selfie may monitor Third Party Content, and may set up controls of the same, Wasted Selfie is under no obligation to investigate, monitor or check for accuracy, appropriateness, or completeness of Third Party Content. Wasted Selfie offers no guarantees and assumes no responsibility or liability of any type with respect to the Third Party Content, including any liability resulting from incompatibility between the Third Party Content. You agree that you will not hold Wasted Selfie responsible or liable with respect to the Third Party Content or seek to do so.
+Further, we are not responsible for any third party websites accessed through the Service, and you should review the terms of use and policies of any website to which you navigate from the Service. If you decide to leave the Service and access third party websites or content, you do so at your own risk and you should be aware that our terms and policies no longer govern. To the extent the Service contains links to outside services and resources, you acknowledge that: (1) Wasted Selfie is not responsible for the content of any linked site or any link contained in a linked site, or any changes or updates to such sites; and (2) Wasted Selfie is not responsible for any other form of transmission received from any linked site. Wasted Selfie provides these links to you only as a convenience, and the inclusion of any link does not imply our approval or endorsement. Any issues or concerns regarding any such site should be directed to the owner or operator of that site.
+“Wasted Selfie” and other Wasted Selfie graphics, logos, designs, page headers, button icons, scripts and service names are trademarks in the United States and other countries. Our trademarks and trade dress, as well as third party trademarks, logos and service marks contained on the Service, may not be used in connection with any product or service in any manner that is likely to cause confusion and may not be copied, imitated, or used, in whole or in part, without the prior written permission of Wasted Selfie or such third party that may own the mark.
+Your Content and Conduct
+As a Wasted Selfie account holder you may submit content to the Service, including without limitation picture posts, and user comments (“User Content”). You understand that Wasted Selfie does not guarantee confidentiality with respect to any User Content you submit.
+You shall be solely responsible for your own User Content and the consequences of submitting and publishing your User Content on the Service. You affirm, represent, and warrant that you own or have the necessary licenses, rights, consents, and permissions to publish User Content you submit; and you license to Wasted Selfie all patent, trademark, trade secret, copyright or other proprietary rights in and to such User Content for publication on the Service pursuant to these Terms.
+For clarity, you retain all of your ownership rights in your Wasted Selfie Content. However, by submitting User Content to Wasted Selfie, you hereby grant Wasted Selfie a worldwide, non-exclusive, royalty-free, sublicenseable and transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform the User Content in connection with the Service and Wasted Selfie’s (and its successors’ and affiliates’) business, including without limitation for promoting and redistributing part or all of the Service (and derivative works thereof) in any media formats and through any media channels. You also hereby grant each user of the Service a non-exclusive license to access your User Content through the Service, and to use, reproduce, distribute, display and perform such User Content as permitted through the functionality of the Service and under these Terms. The above licenses granted by you in User Content you submit to the Service terminate within a commercially reasonable time after you remove or delete your User Content from the Service. You understand and agree, however, that Wasted Selfie may retain, but not display, distribute, or perform, server copies of your User Content that have been removed or deleted. The above licenses granted by you in user comments you submit are perpetual and irrevocable.
+You further agree that User Content you submit to the Service will not contain third party copyrighted material, or material that is subject to other third party proprietary rights, unless you have permission from the rightful owner of the material or you are otherwise legally entitled to post the material and to grant Wasted Selfie all of the license rights granted herein.
+You further agree that you will not submit to the Service any User Content or other material that is contrary to the [Wasted Selfie Community Guidelines], currently found at [http://www.Wasted Selfieapp.com/community_guidelines], which may be updated from time to time, or contrary to applicable local, national, and international laws and regulations.
+Wasted Selfie does not endorse any User Content submitted to the Service by any user or other licensor, or any opinion, recommendation, or advice expressed therein, and Wasted Selfie expressly disclaims any and all liability in connection with User Content. Wasted Selfie does not permit copyright infringing activities and infringement of intellectual property rights on the Service, and Wasted Selfie will remove all User Content if properly notified that such User Content infringes on another’s intellectual property rights. Wasted Selfie reserves the right to remove User Content without prior notice.
+Account Termination Policy
+Wasted Selfie reserves the right to decide whether User Content violates these Terms for reasons in addition to copyright infringement, such as, but not limited to, nudity, pornography, obscenity, or abusive or bullying content. Wasted Selfie may at any time, without prior notice and in its sole discretion, remove such User Content and/or terminate a user’s account for submitting such material in violation of these Terms.
+Notice of Copyright Infringement
+If you believe in good faith that information contained on the Service infringes your copyright, please provide us with written notification as set forth below. We will review all claims of copyright infringement received and remove content that we deem, in our sole discretion, to have been posted or distributed in violation of any such laws. To make a claim, please provide us with the following:
+A clear description or identification of the copyrighted work that you claim was infringed; A clear description or identification of the material you claim infringes the copyrighted work and information reasonably sufficient to allow us to locate the material on the Service (e.g., a link to the material you claim is infringing); Your contact information, preferably including an email address and telephone number; Include the following or similar statement: “I have a good faith belief that the material that is claimed as copyright infringement is not authorized by the copyright owner, its agent, or the law.” Include the following or similar statement: “I swear, under penalty of perjury, that the information in the notification is accurate and I am the copyright owner, or am authorized to act on behalf of the owner, of an exclusive right that is allegedly infringed.” The notice must be signed by the owner or the person authorized to act on its behalf. Wasted Selfie’s designated agent to receive and act on copyright violations under the Digital Millennium Copyright Act (DMCA) may be contacted at: accounts@Wasted Selfieapp.com or Wasted Selfie, Attn: Copyright Claims, [ ]. We will review and address all notices that comply with the requirements set forth above. Please do not send any correspondence unrelated to claims of copyright infringement as they will not be responded to.
+PLEASE NOTE THAT IF YOU KNOWINGLY MISREPRESENT THAT ONLINE CONTENT IS INFRINGING, YOU MAY BE SUBJECT TO SIGNIFICANT CIVIL PENALTIES, WHICH MAY INCLUDE MONETARY DAMAGES, COURT COSTS, AND ATTORNEYS’ FEES INCURRED BY US, BY ANY COPYRIGHT OWNER, OR BY ANY COPYRIGHT OWNER’S LICENSEE THAT IS INJURED AS A RESULT OF OUR RELYING UPON YOUR MISREPRESENTATION.
+Repeat Infringer Policy
+In accordance with the DMCA, Wasted Selfie has adopted a policy of terminating account holders who are deemed to be repeat copyright infringers.
+Indemnification
+You agree to defend, indemnify and hold harmless Wasted Selfie, its officers, members, predecessors, successors in interest, directors, employees, agents, subsidiaries, affiliates, licensors and suppliers from and against any and all claims, charges, complaints, damages, losses, liabilities, costs and expenses (including attorneys’ fees) due to, arising out of or relating in any way to your use of the Service.
+Disclaimer
+YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT, TO THE EXTENT PERMITTED BY APPLICABLE LAW, USE OF THE SERVICE IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. THE SERVICE AND CONTENT ON THE SERVICE ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND WE HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE SERVICE, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. WE DO NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE SERVICE, THAT THE FUNCTIONS CONTAINED IN OR SERVICES PERFORMED BY THE SERVICE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT ANY SERVICE WILL CONTINUE TO BE MADE AVAILABLE, THAT DEFECTS IN THE SERVICE WILL BE CORRECTED, OR THAT THE SERVICE WILL BE COMPATIBLE OR WORK WITH ANY THIRD PARTY SOFTWARE, APPLICATIONS OR THIRD PARTY SERVICES. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY US OR AN APPROVED REPRESENTATIVE SHALL CREATE A WARRANTY. ALL INFORMATION PROVIDED ON THE SERVICE IS SUBJECT TO CHANGE WITHOUT NOTICE. Wasted Selfie CANNOT ENSURE THAT ANYTHING YOU DOWNLOAD FROM THE SERVICE WILL NOT CONTAIN VIRUSES OR OTHER DESTRUCTIVE ELEMENTS. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSIONS AND LIMITATIONS MAY NOT APPLY TO YOU.
+Limitations of Liability
+Except where prohibited by law, in no event will Wasted Selfie or any of its affiliated entities be liable for any indirect, special, punitive, incidental, exemplary or consequential damages that result from: (1) the use of, or inability to use, the Service; (2) the performance of the services and materials available from the Service; or (3) the conduct of other users of the Service, even if Wasted Selfie has been advised of the possibility of such damages. You assume total responsibility for your use of the Service. Your only remedy against Wasted Selfie for dissatisfaction with the Service or any Wasted Selfie Content is to stop using the Service. If, notwithstanding these Terms, Wasted Selfie is found liable to you for any damage or loss which arises out of or is in any way connected with your use of the Service or any Wasted Selfie Content, Wasted Selfie’s liability shall in no event exceed $1.00. Some jurisdictions do not allow limitations of liability, so the foregoing limitation may not apply to you.
+Controlling Law and Severability
+This Agreement shall be construed in accordance with the laws of the State of California, without regard to any conflict of law provisions. Any dispute arising under this Agreement shall be resolved exclusively by the state and/or federal courts of the State of California, County of Los Angeles and/or the Central District of California. If a court of competent jurisdiction finds any provision or portion of these terms and conditions unenforceable, the remainder shall continue in full force and effect.
+Miscellaneous
+Wasted Selfie administers and operates the Service from its location in Santa Monica, California USA. Although the Service is accessible throughout the world, not all services or features provided or offered on the Service are available to all persons or in all geographic locations. Wasted Selfie reserves the right to limit, in its sole discretion, the provision and quantity of any service or feature to any person or geographic area. Use of the Service is unauthorized in any jurisdiction that does not give effect to all provisions of these Terms and any offer for any feature or service made on the Service is void where prohibited. The failure of Wasted Selfie to enforce strict performance by you of any provision of these Terms shall not be construed as a waiver of any provision or right. We may provide notice to you relating to the Service and/or these Terms by sending an email to your last known email address, and any such notice shall be deemed given and received on the day it is sent. You agree that any cause of action that you may desire to bring arising out of or related to these Terms and/or the Service must commence within one (1) year after the cause of action arises; otherwise, such cause of action shall be permanently barred. You may not use the Service or export the Wasted Selfie Content in violation of U.S. export laws and regulations. If you access the Service from a location outside the United States, you are solely responsible for complying with applicable local laws.
+Termination
+These Terms are effective unless and until terminated by Wasted Selfie. Wasted Selfie may terminate these Terms at any time and may do so immediately without notice and, accordingly, deny you access to the Service, in Wasted Selfie’s sole discretion. The terms relating to Intellectual Property, Indemnification, Disclaimer, Limitation of Liability and Controlling Law and Severability shall survive termination. You also agree that any breach or violation by you of any of these Terms will cause Wasted Selfie irreparable damage, for which monetary damages would be inadequate, and you consent to Wasted Selfie obtaining injunctive or equitable relief, without being required to post a bond, if Wasted Selfie seeks such relief under the circumstances. Such injunctive or equitable would be in addition to any other remedies that Wasted Selfie might have at law.
+Complete Agreement
+These Terms, together with the License Agreement, constitute the entire agreement between you and us and supersede all prior or contemporaneous understandings regarding the same. No amendment to or modification of these Terms will be binding unless in writing and signed by us.
+Questions and Comments
+We welcome your questions, comments and concerns. Please send any feedback to Info@Wasted Selfieapp.com
+Community Guidelines
+The intent of this document is to clarify what we consider to be acceptable use of Wasted Selfie, LLC’s (“Wasted Selfie,” “we” or “us”) website, [Wasted Selfie.sh] (the “Site”), and Wasted Selfie’s iPhone and other applications (those applications together with the Site, “Service”). Redundant Content. Service is not intended to be an all-purpose content aggregator. Users who import or aggregate content in a less-than-meaningful way are likely to be suspended. Illegal Use. Service may not be used for illegal purposes. Examples of this include using Service for fraudulent purposes or operating a phishing site (used to obtain account and password information). Spam. Users that do not publish meaningful content, use deceptive means to generate revenue or traffic, or whose primary purpose is affiliate marketing, will be suspended. Identity Theft and Privacy. Users that misleadingly appropriate the identity of another person are not permitted. Users may not post other people’s personally identifying or confidential information, including but not limited to credit card numbers, Social Security Numbers, and driver’s and other license numbers. You may not post information such as other people’s passwords, usernames, phone numbers, addresses and e-mail addresses unless already publicly accessible on the Web. Hate Content, Defamation, and Libel. Hate speech and other objectionable content that is unlawful, defamatory, and fraudulent. Note that an allegation of defamatory expression, in and of itself, does not establish defamation. The truth or falsehood of a bit of expression is a key element in establishing defamation, and we are not in a position to make that sort of fact-based judgment. That said, if we have reason to believe that a particular statement is defamatory (a court order, for example), we will remove that statement Copyright. Using copyrighted material does not constitute infringement in all cases. In general, however, users should be careful when using copyrighted content without the permission of those who created it. It is our policy to respond to notices of alleged infringement that comply with the Digital Millennium Copyright Act (“DMCA”). Mass Registration and Automation. Accounts that are registered automatically or systematically will be removed and access will be permanently suspended. Sexually Explicit Content. Accounts that regularly upload sexually explicit or pornographic material will be suspended. Malicious Bigotry. Don’t actively promote violence or extreme hatred against individuals or groups, on the basis of race, ethnic origin, religion, disability, gender, age, veteran status, or sexual orientation. While we firmly believe that the best response to hateful speech is not censorship but more speech, we will take down malicious bigotry, as defined here. Harm to Minors. Be thoughtful when posting anything involving a minor. Don’t post anything relating to minors that is sexually suggestive or violent. Don’t bully minors, even if you are one. Life as a teenager is hard enough without the fear, anguish, and isolation caused by online bullying. Promotion and Glorification of Self-Harm. Don’t post content that actively promotes or glorifies self-harm. This includes content that urges or encourages readers to cut or injure themselves; embrace anorexia, bulimia, or other eating disorders; or commit suicide rather than, e.g., seeking counseling or treatment, or joining together in supportive conversation with those suffering or recovering from depression or other conditions. Dialogue about these behaviors is incredibly important and online communities can be extraordinarily helpful to people struggling with these difficult conditions. Gore and Mutilation Content. Don’t post gore just to be shocking. Don’t showcase the mutilation or torture of human beings, animals, or their remains. Mass Registration and Automation. Don’t register accounts or post content automatically, systematically, or programmatically. Unauthorized Sweepstakes or Giveaways. Everyone wants to be a winner, but there are many reasons (including legal ones) why Service can’t be used for sweepstakes without our involvement and consent. If you’re planning something like this, let us know. Copyright and Trademark Infringement. Respect the copyrights and trademarks of others. If you aren’t authorized to use someone else’s copyrighted or trademarked work (either expressly or by legal exceptions and limitations like fair use), don’t. It is our policy to respond to notices of alleged copyright infringement as per our Terms of Service and the Digital Millennium Copyright Act. Impersonation, Stalking, or Harassment. Treat the community the way you’d like to be treated. Don’t attempt to circumvent the Block feature. If you want to parody or ridicule a public figure (and who doesn’t?), don’t try to trick readers into thinking you are actually that public figure. Privacy Violations. Don’t use Wasted Selfie to deceptively obtain personal information. Don’t post content that violates anyone’s privacy, including personally identifying or confidential information like credit card numbers, social security numbers, unlisted contact information, or private photos of your ex’s junk (no matter how attractive). Disruptions, Exploits, and Resource Abuse. Our servers and the valiant engineers that support them work hard for you. Don’t attempt unauthorized use, disruption, or exploitation of Wasted Selfie or our other products and Wasted Selfies, or otherwise abuse Wasted Selfie’s resources. Unlawful Uses and Content. This one’s pretty obvious, but Wasted Selfie is not a place for illegal behavior, including fraud, phishing, or illegally inciting violence. Account Termination If we conclude you are violating these policies, you may receive a notice via email. If you don’t explain or correct your behavior, your account may be suspended and/or your User ID may be blocked. We do our best to ensure fair outcomes, but in all cases we reserve the right to suspend accounts or remove content, without notice, for any reason, but particularly to protect our services, infrastructure, users, or community. We reserve the right to enforce, or not enforce, these policies in our sole discretion, and these policies don’t create a duty or contractual obligation for us to act in any particular manner. We also reserve the right to amend these policies.
+Privacy Policy
+Wasted Selfie, LLC (“Wasted Selfie,” “we” or “us”) is committed to protecting your privacy and the security of personally identifying information (“Personal Information”), including yours. We have prepared this Privacy Policy to explain how we collect, use, protect, and disclose your Personal Information, Usage Data and Message Data (as those terms are defined below) when you use the Wasted Selfie website (“Site”) or any Wasted Selfie application or other Wasted Selfie service (“Services”). This Privacy Policy also explains how you can manage your information preferences. By using the Site or Services you consent to this Privacy Policy. We are not responsible for the content on, or privacy practices, of any non-Wasted Selfie entity, website, or service to which the Site links or that links to the Site.
+Information We Collect
+Personal Information
+We generally collect very little information that personally identifies you, such as your mobile telephone number. We also have you create a username and password. You may be asked to provide us with certain Personal Information when you register within the mobile application. The decision to provide this information is voluntary. However, if you choose not to provide the requested information, you will not be able to use the mobile application Services.
+Usage Data
+We automatically collect usage information that does not identify an individual user but allows us to collect information regarding how users access and use Services (“Usage Data”). For example, when you download and use Services, we automatically collect information on the type of device you use, operating system version, and the device identifier (or “UDID”). Additionally, each time you use the Site, we automatically collect information regarding the type of web browser you use, your operating system, your Internet Service Provider, your IP address, the pages you view, and the time and duration of your visits to the Site. We use this information to analyze trends, administer the Site and to enhance and update the Services. We may ask you for, access or track any location based information from your mobile device at any time while downloading or using our mobile applications or Services. Your permission to our access to and tracking of your location based information is purely voluntary, and, accordingly, you may freely opt-in of or opt-out of and determine the level of specificity of the same.
+
+
+</string>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tqA-oQ-9Rf">
+                            <rect key="frame" x="81" y="32" width="159" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V1g-QH-cxT">
+                            <rect key="frame" x="111" y="378" width="100" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                            <state key="normal" title="Disagree">
+                                <color key="titleColor" red="0.21960784310000001" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onDisagree:" destination="-1" eventType="touchUpInside" id="5qq-Ne-Fvv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="ELj-wz-lp9" userLabel="Button - Signup">
+                            <rect key="frame" x="0.0" y="418" width="320" height="62"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.53333333329999999" green="0.75294117650000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                            <state key="normal" title="Accept Terms of Service">
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onAcceptTerms:" destination="-1" eventType="touchUpInside" id="CVn-TV-Mkw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="231" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back" width="18" height="18"/>
+        <image name="icon_email" width="13" height="12"/>
+        <image name="icon_password" width="11" height="13"/>
+        <image name="icon_username" width="24" height="48"/>
+        <image name="image_avatar" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
